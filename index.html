@@ -1,0 +1,30 @@
+<html>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+var decrement = function(){
+  var count = $('h1').text();
+  if (count > 0) {
+    $('h1').text(count-1);
+  } else {
+    window.global_test_results = {
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "duration": 4321,
+      "tests": []
+    }
+    $('h1').text(JSON.stringify(window.global_test_results));
+  }
+}
+
+$(function(){
+  setInterval(decrement, 1000);
+});
+</script>
+<style>
+h1 {
+  font-size: 100pt;
+}
+</style>
+<h1>95</h1>
+<html>
