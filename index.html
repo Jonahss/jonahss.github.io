@@ -1,20 +1,23 @@
 <html>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>
-var decrement = function(){
-  var count = $('h1').text();
-  if (count > 0) {
-    $('h1').text(count-1);
-  } else {
-    window.global_test_results = "YO"
-    $('h1').text(window.global_test_results);
-  }
-}
-
-$(function(){
-  setInterval(decrement, 1000);
-});
-</script>
+<head>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//fast.eager.io/X3Hsb4MGLo.js"></script>
+  <script>
+    var decrement = function(){
+      var count = $('h1').text();
+      if (count > 0) {
+        $('h1').text(count-1);
+      } else {
+        window.global_test_results = "YO"
+        $('h1').text(window.global_test_results);
+      }
+    }
+    
+    $(function(){
+      setInterval(decrement, 1000);
+    });
+  </script>
+</head>
 <style>
 h1 {
   font-size: 100pt;
