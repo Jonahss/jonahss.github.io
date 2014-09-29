@@ -6,13 +6,7 @@ var decrement = function(){
   if (count > 0) {
     $('h1').text(count-1);
   } else {
-    window.global_test_results = {
-      "passed": 4,
-      "failed": 0,
-      "total": 4,
-      "duration": 4321,
-      "tests": []
-    }
+    window.global_test_results = "YO"
     $('h1').text(JSON.stringify(window.global_test_results));
   }
 }
